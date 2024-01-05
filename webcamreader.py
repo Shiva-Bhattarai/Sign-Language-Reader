@@ -1,4 +1,5 @@
 import cv2 as cv
+import mediapipe as mp
 
 webcam = cv.VideoCapture(0) #to cature the video from webcam
 
