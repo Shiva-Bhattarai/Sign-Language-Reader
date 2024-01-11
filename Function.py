@@ -107,6 +107,9 @@ def persons_input(hand_cordinates):
             persons_input=" Y"
         else:
             persons_input=" I"
+    elif index_up==True and middel_up==False and ring_up==True and littel_up==False and thumbs_up==False and hand_horz==True:
+        persons_input=" Z"
+
         
     return persons_input
 

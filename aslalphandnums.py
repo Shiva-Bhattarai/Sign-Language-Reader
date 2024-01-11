@@ -46,7 +46,9 @@ with holy_hands.Hands(max_num_hands=1) as hands:
                     x_cordinate, y_cordinate = int(landmark.x * imgW), int(landmark.y * imgH)
                     hand_cordinate.append([index, x_cordinate, y_cordinate])
                 hand_cordinate = np.array(hand_cordinate)
-
+                
+                print(f"Cord = \n{hand_cordinate}")
+                
                 string = persons_input(hand_cordinate)
                 frame = get_fram(frame, hand_cordinate, string)
 
